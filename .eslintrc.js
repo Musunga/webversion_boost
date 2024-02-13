@@ -3,15 +3,15 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ["plugin:vue/essential", "@vue/standard"],
+  extends: ['plugin:vue/essential', '@vue/standard'],
   rules: {
-    "no-console": "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-extend-native": "off",
-    "no-unused-vars": "off"
+    'no-console': 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-extend-native': 'off',
+    'no-unused-vars': 'off'
   },
   parserOptions: {
-    parser: "babel-eslint"
+    parser: 'babel-eslint'
   },
   globals: {
     wx: true,
@@ -19,4 +19,4 @@ module.exports = {
     Stripe: true,
     google: true
   }
-};
+}
