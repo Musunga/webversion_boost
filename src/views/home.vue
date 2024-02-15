@@ -429,23 +429,24 @@
           <div class="home-btns">
             <a
               v-if="system === 'ios'"
-              style="background: #000;"
+              class="button-35"
               :href="appleUrl"
             >
               <img src="../assets/imgs/apple.png" alt="" />
-              <p><span>App Store</span></p>
+              <p><h6>App Store</h6></p>
             </a>
-            <a v-else style="background: #000;" :href="googleUrl">
+            <a v-else class="button-35" :href="googleUrl">
               <img src="../assets/imgs/google.png" alt="" />
               <span>Google Play</span>
             </a>
             <a
               v-if="code"
               @click="onCode"
-              style="background: #fff; color: #000; border: 1px solid #000;"
+              class="button-35"
             >
-              <span>{{ i18n.goborrow }}</span>
+              <h6>{{ i18n.goborrow }}</h6>
             </a>
+
             <!-- <a
               @click="goNearby"
               style="background: #fff; color: #000; border: 1px solid #000;"
@@ -727,6 +728,39 @@ export default {
 </script>
 
 <style lang="less">
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding:0px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.0rem;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.0rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
 .home-warp {
   &-main {
     width: 95%;
@@ -822,7 +856,7 @@ export default {
   width: 100%;
   display: flex;
   position: fixed;
-  bottom: 40px;
+  bottom: 10px;
   justify-content: center;
   flex-direction: row;
   text-align: center;
@@ -831,7 +865,7 @@ export default {
     text-decoration: none;
     width: 30%;
     flex: 1;
-    margin: 20px;
+    margin: 10px;
     background: #000000;
     color: #ffffff;
     padding: 20px 0;
@@ -840,8 +874,8 @@ export default {
     justify-content: center;
     align-items: center;
     img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       margin-right: 10px;
     }
   }

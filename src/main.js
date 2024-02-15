@@ -62,11 +62,6 @@ String.prototype.format = function () {
 }
 
 const ua = navigator.userAgent.toLowerCase()
-// if (ua.indexOf('micromessenger') > -1) {
-//   store.commit('browser', 'wechat')
-// } else if (ua.indexOf('alipay') > -1) {
-//   store.commit('browser', 'alipay')
-// }
 if (ua.indexOf('android') > -1) {
   store.commit('system', 'android')
 } else if (ua.indexOf('iphone') > -1) {

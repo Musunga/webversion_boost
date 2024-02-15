@@ -42,6 +42,7 @@
       </span>
     </div>
     <div class="btn2 btn" @click="onSendCode"><span>{{i18n.login}}</span></div>
+    <div class="btn2 btn" @click="onRegister"><span> Register</span></div>
 
     <select-area v-model="isAreaView" @select="onSelct"></select-area>
     <login-code v-if="isLoginCode" @submit="onLogin" @again="onBack" @back="onBack"></login-code>
@@ -90,8 +91,12 @@ export default {
     onReadMe () {
       window.open(process.env.VUE_APP_PACT)
     },
+
     onSelct (val) {
       this.areaCode = val
+    },
+    onRegister () {
+      this.$router.push('/register')
     },
     onCaptcha () {
       this.code = ''
@@ -184,6 +189,7 @@ export default {
       this.$router.push('/login_alipay')
     }
   },
+
   mounted () {
     this.onCaptcha()
   }

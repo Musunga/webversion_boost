@@ -2,7 +2,7 @@ export const USER_CAPTCHA = 'captcha.webp'
 export const LOGIN_CODE = '/app/login'
 export const SEND_CODE = '/login/mobile/'
 export const USER_INFO = '/app/userInfo'
-
+export const REGISTER = '/register'
 export const LOGIN_ALIPAY = '/app/loginAlipayByCode'
 export const LOGIN_WECHAT = '/app/loginWechatByUserInfo'
 export const LOGIN_FACEBOOK = '/app/loginFacebookByToken'

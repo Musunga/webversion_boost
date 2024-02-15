@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/home.vue'
 import About from '../views/about.vue'
 import Login from '../views/login/login.vue'
+import Register from '../views/register/register.vue'
 import LoginWechat from '../views/login/wechat.vue'
 import LoginAlipay from '../views/login/alipay.vue'
 import Confirm from '../views/confirm/confirm.vue'
@@ -119,6 +120,14 @@ const routes = [
     path: '/nearby_shop',
     name: 'nearby_shop',
     component: ShopDetail
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: Register,
+    meta: {
+      ignoreAuth: true
+    }
   }
 ]
 
