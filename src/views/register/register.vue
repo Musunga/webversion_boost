@@ -71,7 +71,7 @@ export default {
       };
 
       const data = {
-        mobile: this.areaCode + this.phone,
+        mobile: '+' + this.areaCode + this.phone,
         email: this.email,
         firstName: this.firstName,
         lastName: this.lastName
