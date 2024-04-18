@@ -6,21 +6,21 @@
 </template>
 
 <script>
-import { PopupLoading } from './components/popup'
-import { mapState } from 'vuex'
+import { PopupLoading } from "./components/popup";
+import { mapState } from "vuex";
 export default {
   components: {
     PopupLoading
   },
   computed: {
-    ...mapState(['loading'])
+    ...mapState(["loading"])
   }
-}
+};
 </script>
 
 <style lang="less">
 body {
-  background: #EFEFEF;
+  background: #efefef;
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -36,7 +36,7 @@ body {
   align-items: center;
   color: #ffffff;
   background: #383838;
-  font-size: 32px;
-  border-radius: 20px;
+  font-size: 28px;
+  border-radius: 15px;
 }
 </style>
