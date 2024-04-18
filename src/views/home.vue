@@ -424,7 +424,7 @@
         </div>
       </div>
       <div v-else>
-        <img class="home-bg" src="../assets/imgs/bg3.jpg" alt="" />
+        <div class="home-bg" ></div>
         <div class="home-foot">
           <div class="home-btns">
             <a
@@ -854,6 +854,10 @@ export default {
 .home-bg {
   width: 100%;
   height: 100vh;
+  background-image: url("../assets/imgs/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 .home-btns {
   width: 100%;
