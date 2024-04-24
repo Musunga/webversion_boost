@@ -857,7 +857,6 @@ export default {
   background-image: url("../assets/imgs/bg3.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
 }
 .home-btns {
   width: 100%;

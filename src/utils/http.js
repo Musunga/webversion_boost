@@ -9,8 +9,8 @@ import router from '@/router'
 //   // : '/cdb-app-api/test/app/'
 //   : '/cdb-app-api/v1/app/'
 
-// const baseURL = 'https://app.telpaygroup.dev/cdb-app-api/v1/'
-const baseURL = 'https://boostdev.telpaygroup.dev/cdb-app-api/v1/'
+const baseURL = 'https://app.telpaygroup.dev/cdb-app-api/v1/'
+//const baseURL = 'https://boostdev.telpaygroup.dev/cdb-app-api/v1/'
 
 axios.defaults.timeout = 10000
 axios.defaults.baseURL = baseURL
@@ -51,7 +51,7 @@ axios.interceptors.response.use(
   }
 )
 
-const get = (url, data = {}, success = () => {}, failure = () => {}, config = {}) => {
+const get = (url, data = {}, success = () => { }, failure = () => { }, config = {}) => {
   console.log('get config', JSON.stringify(config))
   axios.get(url, { params: data, ...config })
     .then(resp => {
@@ -72,7 +72,7 @@ const get = (url, data = {}, success = () => {}, failure = () => {}, config = {}
     })
 }
 
-const post = (url, data = {}, success = () => {}, failure = () => {}, config = {}) => {
+const post = (url, data = {}, success = () => { }, failure = () => { }, config = {}) => {
   if (!(config.headers && config.headers['Content-Type'] !== 'application/x-www-form-urlencoded')) {
     data = qs.stringify(data)
   }
